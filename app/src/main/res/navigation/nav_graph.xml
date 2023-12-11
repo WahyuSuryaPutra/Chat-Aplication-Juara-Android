@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_latest_messages">
+
+    <fragment
+        android:id="@+id/nav_latest_messages"
+        android:name="com.example.jetpackcomposechatapplication.main.latestmessages.LatestMessagesFragment"
+        android:label="Latest Messages" >
+        <action
+            android:id="@+id/action_nav_latest_messages_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_nav_latest_messages_to_newConversationFragment"
+            app:destination="@id/newConversationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_contacts"
+        android:name="com.example.jetpackcomposechatapplication.main.contacts.ContactsFragment"
+        android:label="Contacts" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.jetpackcomposechatapplication.main.chat.ChatFragment"
+        android:label="Chat" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.jetpackcomposechatapplication.main.profile.ProfileFragment"
+        android:label="Profile" />
+    <fragment
+        android:id="@+id/nav_blocklist"
+        android:name="com.example.jetpackcomposechatapplication.main.blocklist.BlocklistFragment"
+        android:label="Blocklist" />
+    <fragment
+        android:id="@+id/newConversationFragment"
+        android:name="com.example.jetpackcomposechatapplication.main.newconversation.NewConversationFragment"
+        android:label="New Conversation">
+        <action
+            android:id="@+id/action_newConversationFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+</navigation>
