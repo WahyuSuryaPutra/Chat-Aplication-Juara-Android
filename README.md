@@ -1,7 +1,5 @@
 # Chat Application - Jetpack Compose Android
 
-![Chat App](link-to-image)
-
 ## Deskripsi Proyek
 
 Proyek ini adalah implementasi lengkap dari aplikasi obrolan (chat) untuk platform Android, dikembangkan menggunakan Jetpack Compose, framework UI terkini dari Android. Aplikasi ini bertujuan untuk memberikan pengalaman obrolan yang intuitif, menarik, dan responsif bagi pengguna Android.
